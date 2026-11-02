@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123c46" />
+      <stop offset="1" stop-color="#05161c" />
+    </linearGradient>
+    <linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fef9c3" />
+      <stop offset="1" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)" />
+
+  <g fill="none" stroke="#1a6b6f" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 320 H520 V520" />
+    <path d="M792 320 H640 V520" />
+    <path d="M512 700 V832" />
+    <path d="M232 660 H400 V800" />
+    <path d="M792 660 H656 V800" />
+  </g>
+
+  <g fill="#22d3ee">
+    <circle cx="520" cy="320" r="22" />
+    <circle cx="640" cy="320" r="22" />
+    <circle cx="312" cy="320" r="22" />
+    <circle cx="780" cy="660" r="22" />
+  </g>
+
+  <rect x="424" y="410" width="176" height="196" rx="24" fill="#1b1030" stroke="#a78bfa" stroke-width="14" />
+  <text x="512" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="118" fill="#c4b5fd">&amp;</text>
+
+  <circle cx="512" cy="700" r="66" fill="url(#lamp)" />
+  <circle cx="512" cy="700" r="30" fill="#fffbeb" />
+  <g stroke="#fde047" stroke-width="16" stroke-linecap="round" opacity="0.85">
+    <path d="M512 588 V560" />
+    <path d="M600 620 L626 602" />
+    <path d="M424 620 L398 602" />
+  </g>
+
+  <rect x="196" y="252" width="120" height="120" rx="26" fill="#fbbf24" />
+  <rect x="228" y="296" width="56" height="18" rx="6" fill="#1b1030" />
+  <rect x="247" y="277" width="18" height="56" rx="6" fill="#1b1030" />
+
+  <g stroke="#22d3ee" stroke-width="12" fill="none" opacity="0.5">
+    <circle cx="700" cy="216" r="64" />
+    <path d="M700 152 v64 h48" />
+  </g>
+</svg>

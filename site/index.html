@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Circuit Crafter — a logic puzzle you can wire up</title>
+<meta name="description" content="Turn wires, flip switches and route power through AND/OR gates, timers and sensors. 24 circuit puzzles, free in your browser or as a desktop app." />
+<link rel="icon" href="./icon.png" />
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;text-align:center;color:#e6f9ff;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:radial-gradient(circle at 50% 0%,#12455a,#071b26 45%,#03080d)}
+  main{max-width:580px;padding:28px}
+  img{width:128px;height:128px;border-radius:30px;box-shadow:0 12px 40px #000a}
+  h1{font-size:50px;margin:16px 0 8px;background:linear-gradient(90deg,#67e8f9,#fde047,#a78bfa,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{opacity:.88;line-height:1.55}
+  .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:18px 0}
+  a.btn{color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+  a.btn:hover{background:rgba(255,255,255,.18)}
+  a.primary{background:linear-gradient(135deg,#0891b2,#0e7490);border:none;font-size:20px;padding:14px 40px}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0;text-align:left}
+  .features div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 14px;font-size:14px}
+  .features strong{display:block;margin-bottom:4px;color:#67e8f9}
+  small{opacity:.62;line-height:1.5;display:block;margin-top:14px}
+</style>
+</head>
+<body>
+<main>
+  <img src="./icon.png" alt="Circuit Crafter icon" />
+  <h1>Circuit Crafter</h1>
+  <p>Power a lamp, then a pair of them, then a whole panel. Rotate wire, throw switches and let AND/OR gates, pulsing timers and light sensors do the thinking — without ever letting power reach a fuse.</p>
+  <div class="row"><a class="btn primary" href="./play/">Play in your browser</a></div>
+  <div class="features">
+    <div><strong>Real little circuits</strong>Beams of power follow the wire you rotate, and gates only open when their inputs agree.</div>
+    <div><strong>Timers and sensors</strong>Beacons must blink; steady lamps must not. Sensors wake up once something glows.</div>
+    <div><strong>Logic by stealth</strong>24 boards that teach AND, OR, latched signals and safety interlocks without a single lecture.</div>
+  </div>
+  <p>Or download the app:</p>
+  <div class="row">
+    <a class="btn" href="https://github.com/jd4rider/circuit-crafter/releases/latest/download/Circuit-Crafter-mac-arm64.dmg">macOS (Apple Silicon)</a>
+    <a class="btn" href="https://github.com/jd4rider/circuit-crafter/releases/latest/download/Circuit-Crafter-mac-x64.dmg">macOS (Intel)</a>
+    <a class="btn" href="https://github.com/jd4rider/circuit-crafter/releases/latest/download/Circuit-Crafter-win-setup.exe">Windows</a>
+    <a class="btn" href="https://github.com/jd4rider/circuit-crafter/releases/latest/download/Circuit-Crafter-linux-x86_64.AppImage">Linux (AppImage)</a>
+  </div>
+  <small>Installers are unsigned: on macOS right-click → Open the first time; on Windows choose "More info → Run anyway". · <a href="https://github.com/jd4rider/circuit-crafter" style="color:inherit">Source</a></small>
+</main>
+</body>
+</html>
