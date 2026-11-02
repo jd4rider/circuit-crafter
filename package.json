@@ -1,7 +1,7 @@
 {
   "name": "circuit-crafter",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wire batteries, switches, gates and timers into working circuits.",
   "author": "jd4rider",
   "type": "module",
