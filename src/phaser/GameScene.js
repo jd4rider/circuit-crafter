@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import { openTipJar } from './support.js'
 import { W, H, background, button, text, fade } from './common.js'
 import { confetti, flashAt, popText, ring, sparkle } from './fx.js'
 import { audioState, sfx } from '../sound.js'
@@ -423,7 +424,7 @@ export default class GameScene extends Phaser.Scene {
   overlay(stars) {
     const layer = this.add.container(0, 0).setDepth(70)
     const dim = this.add.rectangle(W / 2, H / 2, W, H, 0x03080d, 0.9)
-    const card = this.add.rectangle(W / 2, H / 2, 400, 470, 0x08222b, 1).setStrokeStyle(2, this.chapter.accent, 0.5)
+    const card = this.add.rectangle(W / 2, H / 2, 400, 520, 0x08222b, 1).setStrokeStyle(2, this.chapter.accent, 0.5)
     layer.add([dim, card])
     layer.add(text(this, W / 2, H / 2 - 186, 'Circuit complete', 15, '#7dd3fc', { fontStyle: 'bold' }).setOrigin(0.5))
     layer.add(text(this, W / 2, H / 2 - 146, this.level.name, 29, '#e2f7ff', { fontStyle: 'bold' }).setOrigin(0.5))
@@ -464,6 +465,14 @@ export default class GameScene extends Phaser.Scene {
       h: 44,
       size: 15,
       color: 0x11374a,
+    }).setDepth(80)
+    // Quiet support link: results panel only, under the actions inside the card.
+    button(this, W / 2, H / 2 + 232, '☕ Buy me a coffee', () => openTipJar(), {
+      w: 308,
+      h: 30,
+      size: 14,
+      color: 0x0b2e3a,
+      textColor: '#7dd3fc',
     }).setDepth(80)
   }
 }
